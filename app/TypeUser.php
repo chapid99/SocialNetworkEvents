@@ -7,4 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 class TypeUser extends Model
 {
     //
+    protected $fillable = ['name'];
 }

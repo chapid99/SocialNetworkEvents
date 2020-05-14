@@ -28,3 +28,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//routs TypeUser
+route::resource('TypeUsers','TypeUserController');
+route::post('typeusersupdate','TypeUserController@update');
+route::post('typeusersdestroy','TypeUserController@destroy');
